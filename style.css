@@ -259,10 +259,10 @@ img {
 }
 .banner__faq a {
   display: flex;
-  align-text: center;
+  align-content: center;
   gap: 2rem;
   color: var(--dark);
-  font-zize: 1.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .banner__faq a:hover {
@@ -367,7 +367,7 @@ img {
 .offer__text a {
   gap: 2rem;
   color: var(--light);
-  font-zize: 1rem;
+  font-size: 1rem;
   font-weight: 600;
   background: var(--primary);
   width: fit-content;
@@ -384,7 +384,7 @@ img {
   font-size: 3.7rem;
   font-weight: 800;
   display: flex;
-  align-text: center;
+  align-content: center;
   gap: 2rem;
 }
 .offer__price__bot h3 {
@@ -394,7 +394,7 @@ img {
   font-size: 15rem;
   font-weight: 800;
   display: flex;
-  align-text: center;
+  align-items: center;
   gap: 2rem;
   color: var(--primary);
 }
@@ -454,7 +454,7 @@ img {
 }
 .how__text h2 {
   color: var(--light);
-  font-sixe: 4rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 .how__text p {
@@ -483,38 +483,41 @@ img {
   /* RECOMENDED */
 }
 .recommended {
-  justify-content: center;
+  background-color: rgb(253, 240, 219);
+}.recommended__wrapper{
+  min-height: 400px;
+  text-align: center;
+  align-items: center;
   display: grid;
-  grid-template-columns: 2fr;
   place-items: center;
   min-height: 400px;
   gap: 2rem;
   max-width: 75rem;
   margin: 0 auto;
 }
-
-.recommended__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.recommended__sulat h5 {
+.recommended__sulat h5{
   color: var(--primary);
-  display: flex;
-  align-items:center;
-  justify-content:center;
-  font-weight: 900;
-  font-size: 4rem;
-  max-width: 50rem;
-  margin: 1;
-  justify: center;
+  font-size:4.5rem;
+  font-weight: 700;
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
-.bttn {
-  display: flex;
+.recommended__sulat p{
+  color: var(--dark);
+  margin: 2rem;
 }
+.bttn{
+  display: flex;
+  padding:3rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+.bttn a:last-child{
+  border: 2px solid var(--primary);
 
+
+  
+}
 /* REPEATABLE PATTERS  */
 :root {
   --light: #ffffff;
