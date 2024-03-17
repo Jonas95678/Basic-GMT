@@ -284,6 +284,7 @@ img {
   color: var(--light);
   font-size: 3rem;
 }
+
 .banner__text {
   max-width: 65rem;
   display: flex;
@@ -460,6 +461,8 @@ img {
 .how__text p {
   color: var(--light);
 }
+
+/* HOW MOBILE */
 @media screen and (max-width: 500px) {
   .how__wrapper {
     display: grid;
@@ -480,8 +483,9 @@ img {
     margin: 2rem;
     gap: 1rem;
   }
-  /* RECOMENDED */
 }
+  
+
 .recommended {
   background-color: rgb(253, 240, 219);
 }.recommended__wrapper{
@@ -514,10 +518,86 @@ img {
 } 
 .bttn a:last-child{
   border: 2px solid var(--primary);
-
-
-  
 }
+/* RECOMMENDED MOBILE */
+@media screen and (max-width: 500px) {
+.recommended__sulat h5{
+    font-size: 2.5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.bttn{
+  display: flex;
+  gap: 1rem;
+}
+}
+/* FOOTER */
+.footer{
+  background:var(--primary);
+  min-height: 300px;
+}
+.footer__nav ul.nav {
+  height: 100px;
+  display: flex;
+  gap: 2rem;
+}
+.footer__wrapper {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.footer__nav ul.nav li a {
+  color: var(--light);
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-top: 3rem;
+}
+
+.footer__nav ul.nav li:last-child a {
+  color:var(--primary);
+  background: var(--light);
+  padding: 1rem 1.5rem;
+  border-radius: 5rem;
+  border: 2px solid var(--light);
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+.footer__nav ul.nav li:last-child:hover a {
+  color: var(--light);
+  background: var(--primary);
+  transition: 0.5s ease;
+}
+.footer__nav p{
+  display:flex;
+  color: var(--light);
+  font-size: 1.4rem;
+}
+.footer__nav ul.social li a{
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--light);
+  padding: 1rem;
+  margin-left: 33rem;
+  margin-right: 33rem;
+}
+/* FOOTER MOBILE */
+@media screen and (max-width: 500px) {
+
+  .footer__wrapper{
+    height: 400px;
+  }
+
+  .footer__nav ul.nav {
+    display: block;
+    gap: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+}
+
+
 /* REPEATABLE PATTERS  */
 :root {
   --light: #ffffff;
