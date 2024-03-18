@@ -282,12 +282,12 @@ img {
   transform: translateX(1rem);
   transition: 0.5s ease;
 }
-.banner__text ul.social {
+.banner__text ul.socials {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
-.banner__text ul.social li a {
+.banner__text ul.socials li a {
   color: var(--light);
   font-size: 3rem;
 }
@@ -530,6 +530,7 @@ img {
     gap: 1rem;
   }
 }
+
 /* FOOTER */
 .footer {
   background: var(--primary);
